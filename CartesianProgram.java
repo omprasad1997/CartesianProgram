@@ -26,7 +26,6 @@ public class CartesianProgram {
 
 	        System.out.println("Length Of line 2 :"+length_of_line_2);
 
-	        // System.out.println(String.valueOf(length_of_line_1));
 	        
 	        Integer len_of_line1 = length_of_line_1;
 	        Integer len_of_line2 = length_of_line_2;
