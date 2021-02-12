@@ -15,9 +15,10 @@ public class CartesianProgram {
         
         return lengthOfLine;
     }
-	public static void main (String[] args) 
-	{
-        int lengthOfLine1 = lengthOfLine();
+	public static void main (String[] args) {
+		
+		int lengthOfLine1 = lengthOfLine();
+        
 		System.out.println("Length of Line 1 :" + lengthOfLine1);
 
         int lengthOfLine2 = lengthOfLine();
@@ -26,10 +27,15 @@ public class CartesianProgram {
         Integer lenOfLine1 = lengthOfLine1;
         Integer lenOfLine2 = lengthOfLine2;
 
-        if(lenOfLine1.equals(lenOfLine2))
-            System.out.println("Yes");
+        int value =  lenOfLine1.compareTo(lenOfLine2);
+        System.out.println("Value :"+ value);
+
+        if(value==0)
+            System.out.println("Two lines are equal");
+        else if(value > 0)
+            System.out.println("Line 1 is greater than Line 2");
         else
-            System.out.println("No");
+            System.out.println("Line 1 is less than Line 2");
     }
 
 }
